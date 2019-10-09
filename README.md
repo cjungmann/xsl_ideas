@@ -18,9 +18,21 @@ able to view the results by opening the XML file with a browser.
 My preferred method to check the results is to use **xsltproc**:
 
 ~~~sh
- $ xsltproc parse_vals.xml parse_vals.xsl
+ $ xsltproc parse_vals.xsl parse_vals.xml
 ~~~
 
 Note the main two parameters of **xsltproc** are the XML file
 and the XSL file.  Remember to put the XSL file first on the
 command line.
+
+## Parse Vals
+
+
+
+
+## Dup_Doc
+
+The focus of this idea is the XSL file, **dup_doc.xsl**.  The companion
+file, **dup_doc.xml** is a simple document with a variety of XML items
+to test and confirm how they are, or are not, duplicated.
+
