@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="dup_doc.xsl" ?>
+<?filter-out name="bogus" type="expendible" role="ignorable" ?>
+
+<!--
+   Comment text.  Notice that we're testing a few things
+   1. Select and copy all content of a document
+   2. Ignore (not copy) certain content types
+   3. Include only specific content types
+
+   Among the content items we want to detect and
+   selectively include or exclude:
+
+   elements
+   attributes
+   processing-instructions (like xml-stylesheet)
+   comments
+-->
+
+<collection>
+  <!-- collection-contained comment -->
+  <item name="book">
+    <!-- item-contained comment -->
+  </item>
+  <item name="saucepan" />
+  <item name="soup" />
+</collection>
